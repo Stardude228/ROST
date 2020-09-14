@@ -1,0 +1,121 @@
+ul{
+    list-style: none;
+}
+
+.top-underline {
+    max-width: 100%;
+    height: 1px;
+    background-color: rgb(146, 146, 146);
+}
+
+.bottom-underline {
+    max-width: 100%;
+    height: 1px;
+    background-color: rgb(146, 146, 146);
+}
+
+.top-services {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 13px;
+}
+
+
+/* .footer-specs {} */
+
+.spec {
+    display: inline;
+    margin: 0 2.33333333rem
+}
+
+.icon {
+    font-size: 2.25rem;
+    margin-right: .22222227rem;
+    vertical-align: middle;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-cycle {
+    background-size: contain;
+}
+
+.icon-repair {
+    background-size: contain;
+}
+
+.icon-delivery {
+    background-size: contain;
+}
+
+.icon-wallet {
+    background-size: contain;
+}
+
+.footer-menu {
+    border-top: 1px solid #e4e4e4;
+    color: #5a5a5a;
+    padding-top: 3.66666667rem;
+    padding-bottom: 3.66666667rem;
+    font-size: 1rem;
+    line-height: 2.375rem;
+    letter-spacing: .03em;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.footer-group {
+    float: left;
+    display: flex;
+    text-align: left;
+    color: #5a5a5a;
+    font-size: 12px;
+    width: 20%;
+}
+
+a {
+    color: #5a5a5a !important;
+    cursor: pointer;
+}
+
+.social-facebook {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    background-size: contain;
+}
+
+.social-twitter {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    background-size: contain;
+}
+
+.social-instagram {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    background-size: contain;
+}
+
+.social-youtube {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    background-size: contain;
+}
+
+.footer-social {
+    padding-left: 20px !important;
+}
+
+.icon-social {
+    font-size: 2.25rem;
+    margin-right: .8888887rem;
+    vertical-align: middle;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}

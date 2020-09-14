@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+.home-inner {
+    background-image: url("../../assets/images/bg.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caption {
+    width: 100%;
+    position: absolute;
+    max-width: 100%;
+    top: 35%;
+    left: 5%;
+    z-index: 1;
+    color: white !important;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+}
+.caption h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+}
+.caption h3 {
+    font-size: 2rem;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 1.6rem;
+}
+.btn-lg {
+    color: white !important;
+    border-width: medium;
+    border-radius: 0;
+    padding: .6rem 1.3rem;
+    font-size: 1.1rem;
+}
+.btn-lg:hover {
+    color: black !important;
+}
+.HomeBestsellers{
+    width: 350px;
+    height: 300px;
+}
+
+.heading {
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.HomeMainCarousel {
+    margin-bottom: 100px;
+}
+
+.clients img {
+    width: 100%;
+    border-radius: 50%;
+}
+blockquote .svg-inline--fa {
+    color: #1ebba3;
+    margin: 1rem;
+}
+.clients hr {
+    border-top: .05rem solid #1ebba3;
+}
