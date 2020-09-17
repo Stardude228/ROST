@@ -15,7 +15,6 @@ export const openModal = (list) => ({
     payload: list
 })
 
-export const clearCart = (cartItems) => ({
-    type: CLEAR_CART,
-    payload: cartItems
+export const clearCart = () => ({
+    type: CLEAR_CART
 })

@@ -10,7 +10,7 @@ export const fetchData = (_search) => (dispatch) => {
     const page = search.get("page");
     const q = search.get("search");
 
-    Axios.get(process.env.REACT_APP_API_URL_PRODUCTS + `/posts/?_limit=1000&_page=${page}&q=${q || ""}`)
+    Axios.get(process.env.REACT_APP_API_URL_PRODUCTS + `/posts/?_limit=100&_page=${page}&q=${q || ""}`)
     .then((resp) => {
         const {data, headers} = resp;
         localStorage.setItem("totalCount", headers["x-total-count"])
