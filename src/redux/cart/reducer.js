@@ -1,7 +1,7 @@
 import { ADD_ITEM_TO_CART, REMOVE_ITEM_FROM_CART, CLEAR_CART } from "./constants";
 
 const INIT_STATE = {
-    cartItems: []
+    cartItems: JSON.parse(localStorage.getItem("cart")) || []   
 }
 
 const CartReducer = (state = INIT_STATE, action) => {

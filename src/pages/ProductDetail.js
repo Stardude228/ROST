@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import Axios from 'axios';
-import { Row, Col, Button, ButtonGroup, Container } from 'reactstrap';
+import { Row, Col, Button, ButtonGroup, Container, CardText } from 'reactstrap';
 import { connect } from 'react-redux';
 import { addItemToCart, removeItemFromCart, fetchData } from '../redux/actions'
 
@@ -37,7 +37,7 @@ function ProductDetail(props) {
     return (
         <Container style={{marginTop: "100px"}}>
             {data ?(
-                <div className="MainProductDetailDiv">
+                data.title !== "Huawei" && data.title !== "One plus" ? (<div className="MainProductDetailDiv">
                     <Row>
                         <Col md={6}>
                             <img style={{borderRadius: "50px"}} className='w-100' alt={data.title} src={data.image} />
@@ -72,7 +72,18 @@ function ProductDetail(props) {
                             
                         </Col>
                     </Row>
-                </div>) :
+                </div>) : (<div className="MainProductDetailDiv">
+                    <Row>
+                        <Col md={6}>
+                            <img style={{borderRadius: "50px"}} className='w-100' alt={data.title} src={data.image} />
+                        </Col>
+                        <Col md={6}>
+                            <h1>{data.title}</h1>
+                            <p>{data.comment}</p>
+                        </Col>
+                    </Row>
+                </div>)
+                ) :
 
                 (<div>
                     <h4 className="text-danger mt-5">Error 404: Product {params.id} is not defined</h4>

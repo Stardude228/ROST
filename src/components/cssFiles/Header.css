@@ -41,3 +41,53 @@
 .HeaderDropdownItems:hover{
     color: black !important;
 }
+
+
+
+.search-input{
+    width: 300px;
+    height: 35px;
+    border: 1px solid #757D75;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.search-input :active, :hover, :focus{
+    outline: 0;
+    outline-offset: 0;
+}
+.searchList{
+    list-style: none;
+    position: absolute;
+    z-index: 3;
+    background: white;
+    padding: 0;
+}
+.searchListTitle{
+    font-size: 15px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 10px;
+}
+ul.searchList li {
+    cursor: pointer;
+    padding: 10px 68px;
+    border-top: 1px solid #BFBFBF;
+}
+ul.searchList li:hover {
+    background-color: #000000;
+}
+.searchListImageDiv{
+    background: white;
+    width: 150px;
+    height: 120px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+.searchListImage{
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}

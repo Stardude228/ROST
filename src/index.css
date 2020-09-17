@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+li {
+  list-style: none;
+}
+
 ::-webkit-scrollbar{
   width: 10px;
 }
@@ -24,4 +28,27 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* .myImg-container{
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.myImg-container img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.StripeCheckout span {
+  background: #0062CC !important;
+  padding-bottom: 33px !important;
+  padding-top: 3px !important;
+  transition: background linear 0.2s;
+}
+.StripeCheckout span:hover {
+  background: #0063cc41 !important;
 }

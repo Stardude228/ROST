@@ -20,7 +20,7 @@ function Paginations() {
     const createPaginations =()=>{
         const total = parseInt(localStorage.getItem("totalCount"));
         let arr = [];
-        for(let i = 1; i <= Math.ceil(total/6 ); i++){
+        for(let i = 1; i <= Math.ceil(total/3); i++){
             arr.push(
                 <PaginationItem key={i + "-pagination-item"} active={search.get("page") === i.toString()}>
                     <PaginationLink onClick={()=>handleClick(i)} className="HomePaginationLinks">

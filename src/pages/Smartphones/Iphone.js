@@ -1,20 +1,13 @@
 import React, { useEffect } from 'react'
-import {
-    Button, Container, ButtonGroup, Col, Row, Card
-} from 'reactstrap';
-import { useHistory, useLocation } from 'react-router-dom';
+import { Container, Row } from 'reactstrap';
+import { useLocation } from 'react-router-dom';
 import { fetchData } from '../../redux/actions'
 import { addItemToCart } from '../../redux/actions'
 import { connect } from 'react-redux';
+import '../../components/cssFiles/MainProducts.css'
+import BlockOfProducts from '../../components/BlockOfProducts';
 
 function Iphone(props) {
-
-    const history = useHistory()
-
-    const handleClick = (e, item) => {
-        e.stopPropagation()
-        props.addItemToCart(item)
-    }
 
     const location = useLocation();
 
@@ -37,22 +30,7 @@ function Iphone(props) {
                     <h3 id="products" className="heading"> Iphones </h3>
                     <div className="row text-center">
                         {props.data.map((item) => (
-                            item.title === "Iphone" ? (
-                            <Col className="my-4" md={4} key={item.id}>
-                                <div item={item}>
-                                    <div className="feature">
-                                        <Card>
-                                            <img className="w-75" src={item.image} />
-                                            <h4>{item.title}</h4>
-                                            <p>{item.comment}</p>
-                                            <ButtonGroup>
-                                                <Button color="primary" onClick={() => history.replace('/products/' + item.id)}>Get more info</Button>
-                                                <Button className="btn-success" onClick={(e) => handleClick(e, item)}>{item.price}$</Button>
-                                            </ButtonGroup>
-                                        </Card>
-                                    </div>
-                                </div>
-                            </Col>) : (<div key={item.id}/>)
+                            item.title.toLowerCase() === "iphone" ? (<BlockOfProducts item={item}/>) : (<div key={item.id}/>)
                         ))}
                     </div>
                 </Row>
